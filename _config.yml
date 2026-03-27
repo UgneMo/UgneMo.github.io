@@ -13,9 +13,9 @@ title                    : "Ugnė Aleksandra Morkutė"
 title_separator          : "-"
 name                     : &name "Ugnė Aleksandra Morkutė"
 description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://ugne-mo.github.io
+url                      : https://ugnemо.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "UgneMo/ugne-mo.github.io"
+repository               : "UgneMo/UgneMo.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.

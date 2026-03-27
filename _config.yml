@@ -23,13 +23,13 @@ repository               : "UgneMo/UgneMo.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Ugnė Morkutė"
+  name             : "Ugnė Aleksandra Morkutė"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "PhD researcher in Human-Centered Technology at NYU. Focused on human–AI interaction, trust in automated vehicles, and VR-based behavioral research."
   location         : "New York / United States"
   employer         : "NYU Tandon School of Engineering"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "u.morkute@nyu.edu" 
 
   # Academic websites
   academia         : # URL

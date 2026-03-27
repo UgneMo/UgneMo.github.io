@@ -3,62 +3,98 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
-redirect_from:
+redirect_from: 
   - /resume
 ---
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Education
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+**PhD in Human-Centered Technology**  
+New York University, Tandon School of Engineering, New York, USA  
+Jan. 2026 – present  
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+**Research Internship (MSc)**  
+University of Michigan, Ann Arbor, USA  
+Mar. 2025 – Aug. 2025  
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+**MSc in Applied Cognitive Psychology (Cum Laude)**  
+Leiden University, Netherlands  
+Sep. 2023 – Aug. 2025  
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+**BSc in Psychology**  
+Leiden University, Netherlands  
+Sep. 2019 – Jul. 2022  
+
+Minor: Technology, Law & Ethics — Vrije Universiteit Amsterdam  
+
+---
+
+## Research Experience
+
+**PhD Researcher**  
+NYU Tandon School of Engineering  
+- Research on trust and group dynamics in automated systems  
+- Use of immersive simulations to study human–AI interaction  
+
+**Research Intern**  
+University of Michigan  
+- Human–robot interaction research on assistive dining technologies  
+- Co-design and generative AI methods  
+
+---
+
+## Professional Experience
+
+**Web Designer**  
+Cenex, Amsterdam  
+Dec. 2024 – Feb. 2025  
+- Redesigned website interface using Figma  
+- Conducted usability testing and stakeholder collaboration  
+
+**Educational Committee Representative**  
+Leiden University  
+Oct. 2023 – Apr. 2024  
+
+**Sales Assistant (Part-time)**  
+Inditex  
+Aug. 2021 – Jun. 2024  
+
+**Student Mentor**  
+Leiden University  
+Jun. 2021 – Dec. 2021  
+
+---
+
+## Publications
+
+- CHI 2026 (accepted): Human–AI interaction & inclusive design  
+- Vehicle automation study on group trust (under review)  
+- Socially Assistive Robots for Autism (working paper)  
+
+{% for post in site.publications reversed %}
+{% include archive-single-cv.html %}
+{% endfor %}
+
+---
+
+## Skills
+
+**Languages:** English (Native), Lithuanian (Native), German (Fluent), Dutch (Basic)  
+**Technical:** Python, R, SPSS, MATLAB, Qualtrics  
+**Tools:** Figma, Microsoft Office  
+
+---
+
+## Additional Information
+
+- Certified Yoga Instructor (200H)  
+- CS50: Introduction to Programming with Python (Harvard)  
+- GDPR Practitioner Certification  
+
+---
+
+## Interests
+
+Yoga & meditation, traveling, volunteering, reading

@@ -1,6 +1,7 @@
 ---
 title: "Robot-Assisted Social Dining as a White Glove Service"
 collection: publications
+category: conferences
 permalink: /publication/robot-dining-chi-2026
 excerpt: "Designing robot-assisted feeding for in-the-wild social dining through speculative participatory design."
 date: 2026-02-17

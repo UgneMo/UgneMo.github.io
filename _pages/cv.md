@@ -69,10 +69,6 @@ Jun. 2021 – Dec. 2021
 
 ## Publications
 
-- CHI 2026 (accepted): Human–AI interaction & inclusive design  
-- Vehicle automation study on group trust (under review)  
-- Socially Assistive Robots for Autism (working paper)  
-
 {% for post in site.publications reversed %}
 {% include archive-single-cv.html %}
 {% endfor %}

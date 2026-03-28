@@ -67,14 +67,6 @@ Jun. 2021 – Dec. 2021
 
 ---
 
-## Publications
-
-{% for post in site.publications reversed %}
-{% include archive-single-cv.html %}
-{% endfor %}
-
----
-
 ## Skills
 
 **Languages:** English (Native), Lithuanian (Native), German (Fluent), Dutch (Basic)  

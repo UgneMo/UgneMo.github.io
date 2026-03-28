@@ -24,11 +24,10 @@ author:
   # Biographic information
   avatar           : "ugne.jpg"
   name             : "Ugnė Aleksandra Morkutė"
-  pronouns         : # example: "she/her"  
+  pronouns         : "she/her"  
   bio              : "PhD researcher in Human-Centered Technology at NYU. Focused on human–AI interaction, trust in automated vehicles, and VR-based behavioral research."
   location         : "New York / United States"
   employer         : "NYU Tandon School of Engineering"
-  uri              : # URL
   email            : "u.morkute@nyu.edu" 
 
   # Academic websites
@@ -66,6 +65,7 @@ author:
   instagram        : # Username
   lastfm           : # Username
   linkedin         : "https://www.linkedin.com/in/ugne-aleksandra-morkute-789u/"
+  uri              : "https://wp.nyu.edu/tandonschoolofengineering-humanfuel/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

@@ -69,7 +69,7 @@ Jun. 2021 – Dec. 2021
 
 ## Skills
 
-**Languages:** English (Native), Lithuanian (Native), German (Fluent), Dutch (Basic)  
+**Languages:** English (Native), Lithuanian (Native), German (Fluent), Dutch (Basic), Greek (Basic)  
 **Technical:** Python, R, SPSS, MATLAB, Qualtrics  
 **Tools:** Figma, Microsoft Office  
 

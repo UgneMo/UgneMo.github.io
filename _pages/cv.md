@@ -48,6 +48,10 @@ Supervisor: Dr. Patrícia Alves-Oliveira
 ---
 ## Awards & Honors
 
+**School of Engineering (SoE) Fellowship**  
+New York University · Jan. 2026  
+Doctoral fellowship supporting PhD in Human-Centered Technology
+
 **LUSTRA+ Scholarship**  
 LUSTRA · Jun. 2025  
 Awarded for research internship at University of Michigan Robotics Department
@@ -56,11 +60,17 @@ Awarded for research internship at University of Michigan Robotics Department
 Minerva Scholarship Fund · Jun. 2025  
 Awarded for research internship at University of Michigan Robotics Department
 
-**School of Engineering (SoE) Fellowship**  
-New York University · Jan. 2026  
-Doctoral fellowship supporting PhD in Human-Centered Technology
-
 ---
+
+## Service & Volunteering
+
+**Social Mentor**  
+Best Buddies International · Sep. 2025 – present  
+One-to-one friendship and inclusion program supporting individuals with intellectual and developmental disabilities.
+
+**Educational Committee Representative**  
+Leiden University · Oct. 2023 – Apr. 2024  
+Representative of Applied Cognitive Psychology (MSc) on the International Student Platform (ISP), advocating for international MSc students on educational matters.
 
 ## Professional Experience
 

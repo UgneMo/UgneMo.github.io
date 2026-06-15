@@ -14,7 +14,6 @@ redirect_from:
 **PhD in Human-Centered Technology**  
 New York University, Tandon School of Engineering, New York, USA  
 Jan. 2026 – present  
-School of Engineering (SoE) Fellowship recipient
 
 **Research Internship (MSc)**  
 University of Michigan, Ann Arbor, USA  
@@ -45,6 +44,21 @@ University of Michigan
 Supervisor: Dr. Patrícia Alves-Oliveira
 - Human–robot interaction research on assistive dining technologies  
 - Co-design and generative AI methods  
+
+---
+## Awards & Honors
+
+**LUSTRA+ Scholarship**  
+LUSTRA · Jun. 2025  
+Awarded for research internship at University of Michigan Robotics Department
+
+**Minerva Research Scholarship**  
+Minerva Scholarship Fund · Jun. 2025  
+Awarded for research internship at University of Michigan Robotics Department
+
+**School of Engineering (SoE) Fellowship**  
+New York University · Jan. 2026  
+Doctoral fellowship supporting PhD in Human-Centered Technology
 
 ---
 

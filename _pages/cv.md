@@ -114,4 +114,4 @@ Representative of Applied Cognitive Psychology (MSc) on the International Studen
 
 ## Interests
 
-Yoga & meditation, traveling, volunteering, reading
+Yoga & meditation, traveling, volunteering, reading, photography, running 

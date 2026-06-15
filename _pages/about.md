@@ -16,3 +16,5 @@ I use methods such as virtual reality simulations, eye-tracking, behavioral anal
 Currently, I work on projects related to automated vehicles, human-centered AI systems, and assistive technologies, including robot-assisted dining and disability-centered design. Across these areas, I am interested in how interaction design can support transparency, dignity, inclusion, and effective collaboration between humans and intelligent systems.
 
 More broadly, I aim to design technologies that are not only functional but also trustworthy, interpretable, socially aware, and aligned with human needs.
+
+For an overview of my projects, see my [portfolio](https://notion.so/your-link-here).

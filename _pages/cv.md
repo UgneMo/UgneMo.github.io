@@ -14,6 +14,7 @@ redirect_from:
 **PhD in Human-Centered Technology**  
 New York University, Tandon School of Engineering, New York, USA  
 Jan. 2026 – present  
+School of Engineering (SoE) Fellowship recipient
 
 **Research Internship (MSc)**  
 University of Michigan, Ann Arbor, USA  
@@ -35,11 +36,13 @@ Minor: Technology, Law & Ethics — Vrije Universiteit Amsterdam
 
 **PhD Researcher**  
 NYU Tandon School of Engineering  
+Supervisor: Prof. Linda Ng Boyle
 - Research on trust and group dynamics in automated systems  
 - Use of immersive simulations to study human–AI interaction  
 
 **Research Intern**  
 University of Michigan  
+Supervisor: Dr. Patrícia Alves-Oliveira
 - Human–robot interaction research on assistive dining technologies  
 - Co-design and generative AI methods  
 

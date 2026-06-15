@@ -62,16 +62,6 @@ Awarded for research internship at University of Michigan Robotics Department
 
 ---
 
-## Service & Volunteering
-
-**Social Mentor**  
-Best Buddies International · Sep. 2025 – present  
-One-to-one friendship and inclusion program supporting individuals with intellectual and developmental disabilities.
-
-**Educational Committee Representative**  
-Leiden University · Oct. 2023 – Apr. 2024  
-Representative of Applied Cognitive Psychology (MSc) on the International Student Platform (ISP), advocating for international MSc students on educational matters.
-
 ## Professional Experience
 
 **Web Designer**  
@@ -91,6 +81,18 @@ Aug. 2021 – Jun. 2024
 **Student Mentor**  
 Leiden University  
 Jun. 2021 – Dec. 2021  
+
+---
+
+## Service & Volunteering
+
+**Social Mentor**  
+Best Buddies International · Sep. 2025 – present  
+One-to-one friendship and inclusion program supporting individuals with intellectual and developmental disabilities.
+
+**Educational Committee Representative**  
+Leiden University · Oct. 2023 – Apr. 2024  
+Representative of Applied Cognitive Psychology (MSc) on the International Student Platform (ISP), advocating for international MSc students on educational matters.
 
 ---
 

@@ -1,0 +1,35 @@
+name: Sync publications from ORCID
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"  # every Monday, 13:00 UTC (~9am ET)
+  workflow_dispatch: {}   # adds a "Run workflow" button for on-demand runs
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch new publications from ORCID
+        run: python scripts/sync_orcid_publications.py
+
+      - name: Open a pull request with any new publication(s)
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "Add new publication(s) synced from ORCID"
+          title: "New publication(s) found on ORCID"
+          body: |
+            Auto-generated from the ORCID public API (0009-0001-6688-0042).
+            Review each new file in `_publications/` for the excerpt,
+            category, and citation formatting before merging -- ORCID
+            doesn't always include a full author list or abstract.
+          branch: sync/orcid-publications
+          add-paths: _publications/*.md

@@ -4,15 +4,17 @@ Sync new publications from an ORCID record into the AcademicPages
 _publications/ collection.
 
 Runs in GitHub Actions on a schedule (see .github/workflows/sync-publications.yml).
-It never touches master/main directly: it only writes new files into
-_publications/, and the workflow turns any new file into a pull request
-for human review before it goes live.
+It only writes new files into _publications/. The workflow then publishes
+complete entries (ones with an author list) straight to master, and opens a
+pull request for any entry ORCID gave no author list for, so a bare
+"(year). Title." citation never goes live without review.
 
 Matching against existing entries is done by DOI first, falling back to a
 normalized title comparison, so a paper you already added by hand (even
 with different formatting) won't get duplicated.
 """
 import json
+import os
 import re
 import unicodedata
 import urllib.request
@@ -119,17 +121,17 @@ paperurl: "{url}"
 citation: "{citation}"
 ---
 {needs_review}
-<!-- Auto-generated from ORCID on {date.today().isoformat()}. Review the
-     excerpt, category, and citation formatting before merging. -->
+<!-- Auto-generated from ORCID on {date.today().isoformat()}. Check the
+     excerpt, category, and citation formatting. -->
 """
-    return slug, front_matter
+    return slug, front_matter, bool(contributors)
 
 
 def main():
     PUBLICATIONS_DIR.mkdir(exist_ok=True)
     data = fetch_json(ORCID_API)
     existing_dois, existing_titles = load_existing()
-    created = []
+    complete, incomplete = [], []
 
     for group in data.get("group", []):
         for summary in group.get("work-summary", []):
@@ -140,20 +142,29 @@ def main():
             if normalize_title(title) in existing_titles:
                 continue
 
-            slug, content = build_entry(summary)
+            slug, content, has_authors = build_entry(summary)
             out_path = PUBLICATIONS_DIR / f"{slug}.md"
             if out_path.exists():
                 continue
             out_path.write_text(content, encoding="utf-8")
-            created.append(str(out_path))
+            (complete if has_authors else incomplete).append(str(out_path))
             if doi:
                 existing_dois.add(doi)
             existing_titles.add(normalize_title(title))
 
-    if created:
-        print("Created:", ", ".join(created))
-    else:
+    if complete:
+        print("Ready to publish:", ", ".join(complete))
+    if incomplete:
+        print("Needs review (no author list):", ", ".join(incomplete))
+    if not complete and not incomplete:
         print("No new publications found.")
+
+    # Hand the two lists to the workflow (space-separated; slugs have no spaces).
+    gh_output = os.environ.get("GITHUB_OUTPUT")
+    if gh_output:
+        with open(gh_output, "a", encoding="utf-8") as fh:
+            fh.write(f"complete={' '.join(complete)}\n")
+            fh.write(f"incomplete={' '.join(incomplete)}\n")
 
 
 if __name__ == "__main__":

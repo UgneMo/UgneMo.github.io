@@ -1,22 +1,12 @@
 var addressPoints = [
   [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7879363,
-    -122.4075201
+    "Workshop on Multi-Agent Automotive Research<br />AutomotiveUI '24: 16th International Conference on Automotive User Interfaces and Interactive Vehicular Applications; Stanford, CA, USA",
+    37.4265407,
+    -122.1703055
   ],
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.5074456,
-    -0.1277653
-  ],
-  [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
-  ],
-  [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
+    "Validating Consumer-Grade Wearables for Divided Attention Detection in SAE Level 4 Vehicles<br />UbiComp & Health Symposium 2026; New York, USA",
+    40.7127281,
+    -74.0060152
   ]
 ];

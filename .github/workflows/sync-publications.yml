@@ -7,6 +7,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  pages: write
 
 jobs:
   sync:
@@ -19,18 +20,38 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch new publications from ORCID
+        id: orcid
         run: python scripts/sync_orcid_publications.py
 
-      - name: Open a pull request with any new publication(s)
+      # Entries with a full author list go live right away.
+      - name: Publish complete entries to master
+        if: steps.orcid.outputs.complete != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FILES: ${{ steps.orcid.outputs.complete }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add $FILES
+          git commit -m "Add new publication(s) synced from ORCID"
+          git push
+          # Make sure the site rebuilds even if a bot push doesn't trigger it.
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" \
+            || echo "Could not request a Pages build; it will rebuild on the next push."
+
+      # Entries ORCID had no author list for still need a human look.
+      - name: Open a pull request for entries missing an author list
+        if: steps.orcid.outputs.incomplete != ''
         uses: peter-evans/create-pull-request@v7
         with:
-          commit-message: "Add new publication(s) synced from ORCID"
-          title: "New publication(s) found on ORCID"
+          commit-message: "Add new publication(s) synced from ORCID (need author list)"
+          title: "New publication(s) from ORCID need an author list"
           body: |
             Auto-generated from the ORCID public API (0009-0001-6688-0042).
-            Review each new file in `_publications/` for the excerpt,
-            category, and citation formatting before merging -- ORCID
-            doesn't always include a full author list or abstract.
+            ORCID had no contributor list for these, so the citation is missing
+            authors. Fill in the citation (and optionally the excerpt) in each
+            file in `_publications/`, then merge. Complete entries were already
+            published automatically.
           branch: sync/orcid-publications
           add-paths: _publications/*.md
 
